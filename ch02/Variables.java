@@ -78,6 +78,24 @@ public class Variables {
 
         hour = minute + 1;  // correct
         // minute + 1 = hour;  // compiler error
+        
+        public class Date {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+     String day;
+     int date;
+     String month;
+     int year;
+     day = "Friday";
+     date = 13;
+     month = "May";
+     year = 2016;
+     
+     System.out.println(day);
+     System.out.println(date);
+     System.out.println(month);
+     System.out.println(year);
+    
     }
 
 }
