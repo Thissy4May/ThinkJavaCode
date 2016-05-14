@@ -1,0 +1,23 @@
+public class Time {
+    public static void main(String[] args) {
+    double hour;
+    double minute;
+    double second;
+    hour = 19.0;
+    minute = 44.0;
+    second = 40.0;
+    System.out.println("Number of seconds since midnight:");
+    System.out.println((hour * 60) * 60 + (minute * 60) + second);
+double secondsSinceMidnight;
+secondsSinceMidnight = ((hour * 60) * 60 + (minute * 60) + second);
+    System.out.println("Number of seconds remaining in the day:");
+int secondsInTheDay;
+secondsInTheDay = ((24 * 60) * 60); 
+    System.out.println(secondsInTheDay - secondsSinceMidnight);
+    System.out.println("Percentage of the day that has passed:");
+    System.out.println((secondsSinceMidnight * 100) / secondsInTheDay);
+    System.out.println("Time elapsed since I started working on this (seconds)");
+    System.out.println(secondsSinceMidnight - 69630);
+  
+    }
+}
