@@ -1,1 +1,26 @@
+import java.util.Scanner;
 
+/**
+ * Converts seconnds to hours, minutes, and seconds
+ */
+public class Convert {
+
+    public static void main(String[] args) {
+        int seconds, hours, minutes, remainder;
+        final int SECONDS_PER_HOUR = 3600;
+        final int SECONDS_PER_MINUTE = 60;
+        Scanner in = new Scanner(System.in);
+
+        // prompt the user and get the value
+        System.out.print("Exactly how many seconds? ");
+        seconds = in.nextInt();
+
+        // convert and output the result
+        hours = (int) (seconds / SECONDS_PER_HOUR);
+        minutes = ((seconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE);
+        remainder = minutes % SECONDS_PER_MINUTE;
+              System.out.printf("%d seconds = %d hours, %d minutes, %d seconds",
+                          seconds, hours, minutes, remainder);
+    }
+
+}
