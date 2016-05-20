@@ -1,0 +1,30 @@
+public class DateRevisited {
+    public static void main(String[] args) {
+     
+     String day;
+     int date;
+     String month;
+     int year;
+     day = "Friday";
+     date = 20;
+     month = "May";
+     year = 2016;
+     
+     printAmerican (day, month, date, year);
+    }
+    
+    public static void printEuropean(String day, int date, String month, int year) {
+        System.out.print(day);
+        System.out.print(", " + date);
+        System.out.print(", " + month);
+        System.out.print(", " + year);
+    }
+    
+    public static void printAmerican(String day, String month, int date, int year) {
+        System.out.print(day);
+        System.out.print(", " + month);
+        System.out.print(" " + date);
+        System.out.print(", " + year);
+    }
+}
+
