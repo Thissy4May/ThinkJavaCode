@@ -18,5 +18,10 @@ public class Methods {
         double x3 = Math.exp(Math.log(10.0));
         double x4 = Math.pow(2.0, 10.0);
     }
-
+public static void zool(int a, String b, String c) {
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(c);
+    }
+           
 }
