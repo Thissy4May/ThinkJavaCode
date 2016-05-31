@@ -1,0 +1,22 @@
+public class beerBottles {
+    
+    public static void main(String[] args) {
+        int n;
+        n = 3;
+        beerBottles(n);
+    }
+        public static void beerBottles(int n) {
+            if (n >= 1) {
+                System.out.println(n + " bottles of beer on the wall,");
+                System.out.println(n + " bottles of beer,");
+                System.out.println("ya take one down, ya' pass it around,");
+                System.out.println(n + " bottles of beer on the wall.\n");                  
+                beerBottles(n - 1);
+            } else {
+                System.out.println("No bottles of beer on the wall,");
+                System.out.println("No bottles of beer,");
+                System.out.println("ya take one down, ya' pass it around,");
+                System.out.println("No bottles of beer on the wall.");   
+            }
+        }
+    }
