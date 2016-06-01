@@ -1,0 +1,65 @@
+import java.util.Scanner;
+import java.util.Random;
+
+/**
+ * Starter code for the "Guess My Number" exercise.
+ */
+public class Guess {
+        
+    public static void main(String[] args) {
+            // prompt the user and get the value
+        System.out.println("I'm thinking of a number between 1 and 100 (including both).");
+        System.out.println("Can you guess what it is?");
+        System.out.print("Type a number:");
+                           
+        Scanner in = new Scanner(System.in);
+        int guess;
+        guess = in.nextInt();
+        
+        // pick a random number
+        Random random = new Random();
+        int number = random.nextInt(100) + 1;
+        System.out.print("The number I was thinking of is: ");
+        System.out.printf("%d\n",
+                          number);
+        
+        // prompt the user and re-run guessAgain until user guesses correctly
+        if (guess == number) {
+            System.out.print("You guessed correctly.\n");
+        } else if (guess > number) {
+            System.out.print("You guessed too high. Try again.\n");
+            guessAgain(guess, number);
+        } else if (guess < number) {
+            System.out.print("You guessed too low. Try again.\n");
+            guessAgain(guess, number);
+        }                      
+    }
+
+    public static void guessAgain(int guess, int number) {
+    // prompt the user and get the value
+        System.out.println("I'm thinking of a number between 1 and 100 (including both).");
+        System.out.println("Can you guess what it is?");
+        System.out.print("Type a number:");
+                           
+        Scanner in = new Scanner(System.in);
+        guess = in.nextInt();
+        
+        // pick a random number
+        Random random = new Random();
+        System.out.print("The number I was thinking of is: ");
+        System.out.printf("%d\n",
+                          number);
+        
+        // prompt the user and re-run guessAgain until user guesses correctly
+        if (guess == number) {
+            System.out.print("You guessed correctly.\n");
+        } else if (guess > number) {
+            System.out.print("You guessed too high. Try again.\n");
+            guessAgain(guess, number);
+        } else if (guess < number) {
+            System.out.print("You guessed too low. Try again.\n");
+            guessAgain(guess, number);
+        }                      
+
+    }
+}
