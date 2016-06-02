@@ -1,0 +1,27 @@
+public class voidmethods {
+    
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 2;
+        int c = 7;
+        isTriangle(a, b, c);
+    }
+    
+    public static boolean isTriangle(int a, int b, int c) {
+        if ((a + b) < c) {
+            System.out.print("False");
+            return false;
+        } else if
+            ((a + c) < b) {
+            System.out.print("False");
+            return false;
+        } else if
+            ((b + c < a)) {
+            System.out.print("False");
+            return false;
+        }
+            System.out.print("True");
+            return true;
+        }
+    }
+
