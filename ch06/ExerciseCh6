@@ -1,0 +1,19 @@
+public class ExerciseCh6 {
+    
+    public static void main(String[] args) {
+        int n = 5;
+        oddSum(n);
+        System.out.println("The sum of integers from 1 to n is " + oddSum(n));
+    }
+    
+    public static int oddSum(int n) {
+        if (n == 0) {
+            return 0;
+        } else if
+            (n % 2 != 0) {
+        return n + oddSum(n - 1);
+        } else {
+        return oddSum(n - 1);
+    }
+}
+}
